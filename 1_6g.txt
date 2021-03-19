@@ -1,0 +1,38 @@
+#
+# Sigma contine cuvintele (sau litere poti considera):
+# 
+Sigma:
+	0
+	1	
+End
+#
+# Si avem urmatoarele stari
+# 
+States:
+	A, S, F 
+	B, F
+	C, F
+	D, F
+	E, F
+	G, F
+	H 
+End
+#
+# Si urmatoarele tranzitii
+#
+Transitions:
+	A, 0, B
+   	A, 1, B
+   	B, 0, C
+   	B, 1, C
+    	C, 0, D
+    	C, 1, D
+	D, 0, E
+	D, 1, E
+	E, 0, G
+	E, 1, G
+	G, 0, H
+	G, 1, H
+	H, 0, H
+	H, 1, H
+End
